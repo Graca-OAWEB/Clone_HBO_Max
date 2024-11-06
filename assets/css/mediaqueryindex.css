@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 100px) and (max-width: 768px) {
+    footer, .hero-section, .container-plans, .movies-section, header {
+        padding: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    header .logo {
+        width: 20vw;
+    }
+
+    .container-pricing-plans {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+
+    footer, .hero-section, .container-plans, .movies-section, header {
+        padding: 2rem;
+    }
+
+    .container-pricing-plans {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+}
+
+@media screen and (min-width: 901px) {
+    footer, .hero-section, .container-plans, .movies-section, header {
+        padding: 1rem 10vw;
+    }
+
+    .container-pricing-plans {
+        gap: 7vw;
+    }
+}
