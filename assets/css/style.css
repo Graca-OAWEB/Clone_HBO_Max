@@ -160,14 +160,21 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 h1, h2 {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 800;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
 }
 
-h3 {
-    font-family: "Quicksand", sans-serif;
+h1, h2 {
+    font-weight: lighter;
+}
+
+h2 {
     font-weight: 800;
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
     font-style: normal;
     line-height: max(30px, 7vh);
 }
@@ -180,13 +187,12 @@ p {
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: var(--color-gray);
     line-height: max(22px, 3vh);
 }
 
 
 h1 {
-    font-size: clamp(32px, 3vw, 8rem);
+    font-size: clamp(24px, 2vw, 8rem);
 }
 
 h2 {
@@ -201,7 +207,7 @@ p,
 ul,
 ol,
 li, ul li a, legend, button {
-    font-size: clamp(12px, 0.8vw, 5rem);
+    font-size: clamp(1.25rem, 1vw, 5rem);
 }
 
 
@@ -283,9 +289,6 @@ header .logo {
     min-height: 120vh;
     gap: 1rem;
     text-align: center;
-}
-
-.hero-section {
     position: relative;
     background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
     background-size: 400% 400%;
@@ -299,6 +302,10 @@ header .logo {
     position: absolute;
     bottom: 0;
     background: linear-gradient(0deg, var(--primary-color), transparent);
+}
+
+.hero-section h1, .hero-section h2 {
+    text-transform: uppercase;
 }
 
 @keyframes bg-gradient {
@@ -315,6 +322,13 @@ header .logo {
     }
 }
 
+.divider {
+    width: 100%;
+    height: 0.4rem;
+    border: none;
+    background: var(--divider-bg-color);
+    margin: 6vh 0px;
+}
 
 .subscription-info {
     display: flex;
@@ -366,17 +380,28 @@ header .logo {
     justify-content: space-between;
 }
 
-.benefits-list {
-    text-align: start;
+.plan-header strong {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    color: var(--secondary-color);
+    font-weight: 700;
 }
 
-.benefits-list li::marker {
-    display: flex;
+.benefits-list {
+    text-align: start;
+    font-size: 1.25rem;
+    border: 1px solid yellow;
+}
+
+
+.benefits-list li {
+    border: 1px solid blue;
+    padding: 0 0 0 1rem;
 }
 
 .benefits-list li::marker {
     content: "+";
-    padding-right: 1rem;
+    font-size: 2rem;
 }
 
 /*======================= MOVIES ======================*/
@@ -445,6 +470,19 @@ footer {
     align-content: center;
     gap: 1rem;
     margin-top: 25vh;
+}
+
+.footer-links {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: var(--link-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.5s;
+}
+
+.footer-links:hover {
+    color: var(--text-color);
 }
 
 .footer-links, .social-media {
