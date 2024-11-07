@@ -343,9 +343,10 @@ header .logo {
 
 /*======================= PRICE ======================*/
 #pricing-section {
-    background: url("../images/background-movies-series.png") no-repeat;
+    background: url("../images/background-movies-series.webp") no-repeat;
     background-size: cover;
-    position: relative;
+    background-position: right;
+     position: relative;
     gap: 1rem;
     scroll-padding-top: 15vh;
     text-align: center;
