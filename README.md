@@ -2,7 +2,7 @@
 
 Desafio de Flexbox Bootcamp : Formação CSS Developer da DIO
 
-![image](preview.jpg)
+![image](preview.png)
 
 ### [Clique aqui](https://graca-santos-clone-hbo-max.netlify.app/) para acessar a página online!
 
