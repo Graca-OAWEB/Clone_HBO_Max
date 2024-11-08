@@ -1,22 +1,5 @@
 @charset "UTF-8";
 
-
-@media screen and (min-width: 769px) and (max-width: 900px) {
-    .container-movies-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-}
-
-@media screen and (min-width: 901px) {
-    .container-movies-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-}
-
 @media screen and (min-width: 100px) and (max-width: 768px) {
     .hero-section, .container-plans, .movies-section, header {
         padding: 1rem;
@@ -64,6 +47,14 @@
         flex-direction: column;
     }
 
+    .container-pricing-plans:has(.card-price:nth-child(1):hover) .card-price:nth-child(2) {
+        transform: none;
+    }
+
+    .container-pricing-plans:has(.card-price:nth-child(2):hover) .card-price:nth-child(1) {
+        transform: none;
+    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 900px) {
@@ -90,6 +81,12 @@
     .container-pricing-plans {
         flex-direction: column;
         gap: 3rem;
+    }
+
+    .container-movies-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
     }
 
 }
@@ -132,5 +129,12 @@
 
     .hero-text, .subscription-info {
         width: 55vw
+    }
+
+
+    .container-movies-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }

@@ -378,6 +378,10 @@ header .menu {
     display: flex;
 }
 
+.price-info p {
+    text-transform: lowercase !important;
+}
+
 .hero-gallery {
     display: flex;
     flex-wrap: wrap;
