@@ -7,17 +7,31 @@
 
     header {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
         text-align: center;
     }
 
     header .logo {
-        width: 20vw;
+        width: 10rem;
+    }
+
+    .hero-gallery img {
+        width: 7rem;
+        max-width: 7rem;
+    }
+
+    .hero-gallery img:nth-child(3) {
+        width: 3rem;
+        max-width: 3rem;
     }
 
     .container-pricing-plans {
         flex-direction: column;
         gap: 3rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
     }
 
 }
@@ -26,6 +40,21 @@
 
     footer, .hero-section, .container-plans, .movies-section, header {
         padding: 2rem;
+    }
+
+
+    header .logo {
+        width: 12rem;
+    }
+
+    .hero-gallery img {
+        width: 7rem;
+        max-width: 7rem;
+    }
+
+    .hero-gallery img:nth-child(3) {
+        width: 3rem;
+        max-width: 3rem;
     }
 
     .container-pricing-plans {
