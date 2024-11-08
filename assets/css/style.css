@@ -449,21 +449,7 @@ header .logo {
     gap: 3rem;
 }
 
-@media screen and (min-width: 769px) and (max-width: 900px) {
-    .container-movies-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-}
 
-@media screen and (min-width: 901px) {
-    .container-movies-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-}
 
 .movie-card {
     transition: 0.5s ease;
