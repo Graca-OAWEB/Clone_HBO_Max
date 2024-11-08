@@ -84,7 +84,10 @@
 
 @media screen and (min-width: 100px) and (max-width: 901px) and (orientation: landscape) {
 
-    footer, .hero-section, .container-plans, .movies-section, header {
+    header {
+        padding: 1rem 3rem;
+    }
+    footer, .hero-section, .container-plans, .movies-section {
         padding: 3rem;
     }
 
