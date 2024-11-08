@@ -319,20 +319,20 @@ header .menu {
 
 .hero-section h1 {
     text-transform: uppercase;
-    font-size: clamp(16px, 2.5vw, 8rem);
+    font-size: clamp(24px, 2.5vw, 8rem);
 
 }
 
 .hero-section h2 {
     text-transform: uppercase;
-    font-size: clamp(16px, 3.5vw, 8rem);
+    font-size: clamp(24px, 3.5vw, 8rem);
     font-weight: 800;
     padding-top: 0px;
 }
 
 .info-first-p {
     padding-top: 0px;
-    font-size: clamp(16px, 1.5vw, 8rem);
+    font-size: clamp(20px, 1.5vw, 8rem);
 }
 
 @keyframes bg-gradient {
