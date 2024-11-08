@@ -1,6 +1,17 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 100px) and (max-width: 768px) {
+    h2 {
+        font-size: clamp(24px, 2.5vw, 8rem);
+    }
+
+    p,
+    ul,
+    ol,
+    li, ul li a, legend {
+        font-size: clamp(0.9rem, 1vw, 5rem);
+    }
+
     .hero-section, .container-plans, .movies-section {
         padding: 1rem;
     }
@@ -35,6 +46,14 @@
 
     .container-pricing-plans:has(.card-price:nth-child(2):hover) .card-price:nth-child(1) {
         transform: none;
+    }
+
+    .container-movies-list {
+        display: grid;
+        grid-template-columns: repeat(6, 100%);
+        grid-template-rows: 1fr;
+        grid-auto-flow: column;
+        overflow: auto hidden;
     }
 
 }
