@@ -668,9 +668,8 @@ footer p {
     font-weight: bold;
     letter-spacing: 2px;
     transition: color 0.5s;
-}
-
-.footer-links li {
+    display: flex;
+    flex-wrap: nowrap;
     text-transform: uppercase;
     cursor: pointer;
 }
