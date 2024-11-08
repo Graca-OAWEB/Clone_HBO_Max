@@ -18,8 +18,12 @@
 }
 
 @media screen and (min-width: 100px) and (max-width: 768px) {
-    footer, .hero-section, .container-plans, .movies-section, header {
+    .hero-section, .container-plans, .movies-section, header {
         padding: 1rem;
+    }
+
+    footer {
+        padding: 3rem 1rem;
     }
 
     header {
@@ -30,6 +34,15 @@
 
     header .logo {
         width: 10rem;
+    }
+
+
+    .divider {
+        width: 70vw;
+    }
+
+    .hero-section h2 {
+        font-size: 2.3rem;
     }
 
     .hero-gallery img {
@@ -87,6 +100,7 @@
     header {
         padding: 1rem 3rem;
     }
+
     footer, .hero-section, .container-plans, .movies-section {
         padding: 3rem;
     }
