@@ -83,6 +83,11 @@
 
 
 @media screen and (min-width: 100px) and (max-width: 901px) and (orientation: landscape) {
+
+    footer, .hero-section, .container-plans, .movies-section, header {
+        padding: 3rem;
+    }
+
     header, .container-pricing-plans, .footer-links {
         display: flex;
         flex-direction: row;
