@@ -15,13 +15,17 @@
 <body>
 
     <header role="banner" aria-label="cabeçalho da página">
-        <div role="img" aria-label="logotipo da empresa" tabindex="0">
-            <img class="logo" src="./assets/images/hbo-logo.svg" alt="logotipo da empresa hbo max"
-                loading="lazy">
-        </div>
+        <a href="./index.html">
+            <div role="img" aria-label="logotipo da empresa" tabindex="0">
+                <img class="logo" src="./assets/images/hbo-logo.svg"
+                    alt="logotipo da empresa hbo max" loading="lazy">
+            </div>
+        </a>
         <nav class="menu" role="navigation" aria-label="menu de navegação">
-            <button class="btn-login btn-font" tabindex="0"
-                aria-label="botão de login">entrar</button>
+            <a href="./signin.html" target="_blank" rel="noopener noreferrer"> <button
+                    class="btn-login btn-font" tabindex="0"
+                    aria-label="botão de login">entrar</button></a>
+
             <a href="#pricing-section" target="_self"> <button class="btn-signup btn-flat"
                     tabindex="0" aria-label="botão de inscrição"> assine
                     agora</button></a>
@@ -48,14 +52,15 @@
             </div>
 
             <div class="subscription-info" tabindex="0">
-                <p>assinaturas a partir de</p>
+                <p class="info-first-p">assinaturas a partir de</p>
                 <div class="price-info">
-                    <p><strong>r$14,15</strong>/mês*</p>
+                    <h2>r$14,15</h2>
+                    <p>/mês*</p>
 
                 </div>
                 <button class="btn-signup-now btn-gradient" tabindex="0"
                     aria-label="botão para assinar agora">assine agora</button>
-                <p>*aplicável ao plano anual com o pagamento antecipado.</p>
+                <p>*aplicável ao plano anual com o<br> pagamento antecipado.</p>
             </div>
         </section>
 
@@ -69,8 +74,8 @@
 
                 <div class="container-pricing-plans" role="list" aria-label="planos de assinatura">
 
-                    <div class="card-plan-mobile" role="listitem" aria-label="plano mobile"
-                        tabindex="0">
+                    <div class="card-plan-mobile card-price" role="listitem"
+                        aria-label="plano mobile" tabindex="0">
                         <div class="plan-header">
                             <h3>mobile</h3>
                             <p><strong>r$ 19,90</strong> /mês</p>
@@ -88,8 +93,8 @@
                         </button>
                     </div>
 
-                    <div class="card-plan-multitelas" role="listitem" aria-label="plano multitelas"
-                        tabindex="0">
+                    <div class="card-plan-multitelas card-price" role="listitem"
+                        aria-label="plano multitelas" tabindex="0">
                         <div class="plan-header">
                             <h3>multitelas</h3>
                             <p><strong>r$ 27,90 </strong>/mês</p>
@@ -175,8 +180,12 @@
             <li tabindex="0" role="listitem">ajuda</li>
         </ul>
 
-        <p>© 2022 warnermedia direct latin america, llc. todos os direitos reservados. hbo max é
-            usado sob licença.</p>
+        <p> &copy; 2022 <span class="letter-up">w</span>arner<span class="letter-up">m</span>edia
+            <span class="word-cap">direct latin
+                america</span>, <span class="letter-up">llc. t</span>odos os direitos reservados.
+            <span class="letter-up">hbo m</span>ax é
+            usado sob licença.
+        </p>
 
         <div class="social-media" role="group" aria-label="redes sociais">
             <img src="./assets/images/socialicons/fb_0.png" alt="logo do facebook" loading="lazy">

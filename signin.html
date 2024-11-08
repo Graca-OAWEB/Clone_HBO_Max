@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone HBO Max</title>
+
+    <link rel="stylesheet" href="./assets/css/resete.css">
+    <link rel="stylesheet" href="./assets/css/style.css" media="all">
+    <link rel="stylesheet" href="./assets/css/mediaquerylogin.css" media="screen">
+</head>
+
+
+<body>
+
+    <header role="banner" aria-label="cabeçalho da página">
+        <a href="./index.html" target="_self">
+            <div role="img" aria-label="logotipo da empresa" tabindex="0">
+                <img class="logo" src="./assets/images/hbo-logo.svg"
+                    alt="logotipo da empresa hbo max" loading="lazy">
+            </div>
+        </a>
+        <nav class="menu" role="navigation" aria-label="menu de navegação">
+            <button class="btn-login btn-font" tabindex="0"
+                aria-label="botão de login">entrar</button>
+            <a href="./index.html#pricing-section" target="_self"> <button
+                    class="btn-signup btn-flat" tabindex="0" aria-label="botão de inscrição"> assine
+                    agora</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-section" id="login-section" role="region" aria-label="seção hero"
+            tabindex="0">
+
+            <form class="form-login">
+                <h1>entrar</h1>
+                <label>você tem uma conta da<span class="letter-up"> hbo m</span>ax? </label>
+                <input type="email" name="email" id="email" placeholder="Endereço de e-mail" />
+                <input type="password" name="password" id="password" placeholder="Senha"
+                    minlength="8" />
+
+                <div class="box-btn-login">
+                    <button type="submit" class="btn-gradient">entrar</button>
+                    <a href="#" class="linkReset">esqueceu a senha?</a>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo" aria-label="rodapé da página" tabindex="0">
+        <ul class="footer-links" aria-label="links do rodapé">
+            <li tabindex="0" role="listitem">agora na hbo max</li>
+            <li tabindex="0" role="listitem">em breve</li>
+            <li tabindex="0" role="listitem">filme em destaque</li>
+            <li tabindex="0" role="listitem">séries</li>
+            <li tabindex="0" role="listitem">ajuda</li>
+        </ul>
+
+        <p> &copy; 2022 <span class="letter-up">w</span>arner<span class="letter-up">m</span>edia
+            <span class="word-cap">direct latin
+                america</span>, <span class="letter-up">llc. t</span>odos os direitos reservados.
+            <span class="letter-up">hbo m</span>ax é
+            usado sob licença.
+        </p>
+
+        <div class="social-media" role="group" aria-label="redes sociais">
+            <img src="./assets/images/socialicons/fb_0.png" alt="logo do facebook" loading="lazy">
+            <img src="./assets/images/socialicons/twitter_0.png" alt="logo do twitter"
+                loading="lazy">
+            <img src="./assets/images/socialicons/instagram_0.png" alt="logo do instagram"
+                loading="lazy">
+            <img src="./assets/images/socialicons/youtube_0.png" alt="logo do youtube"
+                loading="lazy">
+        </div>
+    </footer>
+
+</body>
+
+</html>

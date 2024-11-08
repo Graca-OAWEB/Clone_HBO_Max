@@ -118,11 +118,19 @@
 }
 
 @media screen and (min-width: 901px) {
-    footer, .hero-section, .container-plans, .movies-section, header {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    footer, .hero-section, .container-plans, .movies-section {
         padding: 1rem 10vw;
     }
 
     .container-pricing-plans {
         gap: 7vw;
+    }
+
+    .hero-text, .subscription-info {
+        width: 55vw
     }
 }

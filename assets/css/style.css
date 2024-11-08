@@ -20,13 +20,16 @@
             #9b34ef 0%,
             #490cb0 20%,
             transparent 50%);
+    /*=== BTN ====*/
     --btn-link-bg-color: #fff;
     --btn-link-color: #000;
+    /*=== CARD ====*/
     --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
     --divider-bg-color: linear-gradient(90deg,
             #5516ba,
             rgba(255, 0, 229, 0.5) 80%);
     --nav-bg-color: rgba(0, 0, 0, 0.3);
+    /*=== FORM ====*/
     --text-color: #fff;
     --link-color: #9e86ff;
     --form-bg-color: rgba(211, 211, 211, 0.06);
@@ -34,12 +37,11 @@
     --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
     --form-field-placeholder: rgba(255, 255, 255, 0.7);
     --form-field-error: rgb(255, 76, 76);
-
+    /*=======*/
     --bg-white: #FFFFFF;
     --color-black: #000000;
     --bg-gray: #23272A;
     --bg-gray-light: #F6F6F6;
-    --primary-text-color: #23272A;
     --bs-success: #00c247;
     --bs-info: #0b4ac7;
     --bs-warning: #f0d25b;
@@ -70,13 +72,11 @@ html {
     color: var(--tertiary-color);
 }
 
-/* Suporte para Firefox*/
 *::-moz-selection {
     background-color: var(--text-color);
     color: var(--tertiary-color);
 }
 
-/* Suporte para WebKit (Chrome, Safari) */
 *::-webkit-selection {
     background-color: var(--text-color);
     color: var(--tertiary-color);
@@ -165,11 +165,7 @@ h1, h2 {
 }
 
 h1, h2 {
-    font-weight: lighter;
-}
-
-h2 {
-    font-weight: 800;
+    font-weight: 500;
 }
 
 h3 {
@@ -196,7 +192,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(24px, 3vw, 8rem);
+    font-size: clamp(16px, 2.5vw, 8rem);
 }
 
 h3 {
@@ -207,11 +203,11 @@ p,
 ul,
 ol,
 li, ul li a, legend {
-    font-size: clamp(1.25rem, 1vw, 5rem);
+    font-size: clamp(0.9rem, 0.7vw, 5rem);
 }
 
 button {
-    font-size: clamp(0.8rem, 1vw, 5rem);
+    font-size: clamp(0.7rem, 0.7vw, 5rem);
 }
 
 
@@ -242,10 +238,12 @@ label, option {
     text-transform: uppercase;
     letter-spacing: 4px;
     cursor: pointer;
+    transition: 0.5s ease;
+    font-weight: 600;
 }
 
 .btn-flat, .btn-font {
-    padding: 0.8rem 2rem;
+    padding: 0.5rem 2rem;
 }
 
 .btn-gradient {
@@ -258,6 +256,11 @@ label, option {
 
 .btn-flat {
     background: var(--tertiary-color);
+}
+
+.btn-flat:hover {
+    background: var(--btn-link-bg-color);
+    color: var(--btn-link-color);
 }
 
 .btn-gradient {
@@ -288,6 +291,7 @@ header {
 
 header .logo {
     width: 12vw;
+    cursor: pointer;
 }
 
 header .menu {
@@ -296,7 +300,7 @@ header .menu {
 }
 
 /*======================= HERO ======================*/
-.hero-section {
+#hero-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,21 +312,27 @@ header .menu {
     background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
     background-size: 400% 400%;
     animation: bg-gradient 10s ease infinite alternate;
-    padding-top: 10rem !important;
+    padding-top: 8rem !important;
 
 }
 
-.hero-section::after {
-    content: "";
-    width: 100%;
-    height: 250px;
-    position: absolute;
-    bottom: 0;
-    background: linear-gradient(0deg, var(--primary-color), transparent);
-}
 
-.hero-section h1, .hero-section h2 {
+.hero-section h1 {
     text-transform: uppercase;
+    font-size: clamp(16px, 2.5vw, 8rem);
+
+}
+
+.hero-section h2 {
+    text-transform: uppercase;
+    font-size: clamp(16px, 3.5vw, 8rem);
+    font-weight: 800;
+    padding-top: 0px;
+}
+
+.info-first-p {
+    padding-top: 0px;
+    font-size: clamp(16px, 1.5vw, 8rem);
 }
 
 @keyframes bg-gradient {
@@ -339,6 +349,7 @@ header .menu {
     }
 }
 
+
 .hero-text {
     display: flex;
     flex-direction: column;
@@ -352,7 +363,7 @@ header .menu {
     height: 0.4rem;
     border: none;
     background: var(--divider-bg-color);
-    margin: 6vh 0px;
+    margin: 5vh 0px;
 }
 
 .subscription-info {
@@ -385,6 +396,43 @@ header .menu {
     max-width: 3vw;
 }
 
+#hero-section button {
+    animation: wiggle 2.2s linear infinite;
+}
+
+@keyframes wiggle {
+
+    0%,
+    10% {
+        transform: rotate(0);
+    }
+
+    15% {
+        transform: rotate(-15deg);
+    }
+
+    20% {
+        transform: rotate(10deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    30% {
+        transform: rotate(10deg);
+    }
+
+    35% {
+        transform: rotate(-10deg);
+    }
+
+    40%,
+    100% {
+        transform: rotate(0);
+    }
+}
+
 /*======================= PRICE ======================*/
 #pricing-section {
     background: url("../images/background-movies-series.webp") no-repeat;
@@ -393,6 +441,8 @@ header .menu {
     gap: 1rem;
     scroll-padding-top: 15vh;
     text-align: center;
+    padding-top: 20dvh;
+    padding-bottom: 20dvh;
 }
 
 .container-plans {
@@ -405,6 +455,8 @@ header .menu {
 .container-pricing-plans {
     display: flex;
     min-height: 90vh;
+    perspective: 2000px;
+    perspective-origin: top;
 }
 
 .card-plan-mobile, .card-plan-multitelas {
@@ -417,11 +469,25 @@ header .menu {
     padding: 3vh 5vw;
     background: var(--card-bg-color);
     border-radius: 2vh;
+    transition: transform 1s ease-in-out;
+}
+
+.container-pricing-plans:has(.card-price:nth-child(1):hover) .card-price:nth-child(2) {
+    transform: rotateY(-45deg);
+}
+
+.container-pricing-plans:has(.card-price:nth-child(2):hover) .card-price:nth-child(1) {
+    transform: rotateY(45deg);
 }
 
 .plan-header {
     display: flex;
     justify-content: space-between;
+}
+
+.price-info p {
+    text-align: inherit;
+    line-height: inherit;
 }
 
 .price-info strong, .plan-header strong {
@@ -452,6 +518,7 @@ header .menu {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
+    height: auto;
 }
 
 .container-movies-list {
@@ -461,12 +528,17 @@ header .menu {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     gap: 3rem;
+    padding: 5vh 0px;
 }
 
 
 
 .movie-card {
     transition: 0.5s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
 }
 
 .movie-card .before {
@@ -488,6 +560,74 @@ header .menu {
     height: 100%;
 }
 
+/*======================= LOGIN ======================*/
+/*=== FORM ====*/
+#login-section {
+    background: url("../images/background-movies-series.webp") no-repeat;
+    background-size: cover;
+    background-position: right;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90dvh;
+    padding-top: 6rem;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: var(--form-bg-color);
+    gap: 1.5rem;
+    padding: 4dvh;
+    text-align: start;
+    margin: 0 auto;
+    border-radius: 0.6rem;
+}
+
+form h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+input {
+    background-color: var(--form-field-bg-color);
+    border: var(--form-field-border);
+    padding: 2.5dvh;
+    color: var(--form-field-placeholder);
+    border-radius: 0.4rem;
+
+}
+
+
+input::placeholder {
+    color: var(--form-field-placeholder);
+}
+
+input:invalid {
+    border: 1px solid var(--form-field-error);
+}
+
+input:valid :not(:placeholder-shown) {
+    border: 1px solid var(--bs-success);
+}
+
+.box-btn-login {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+
+.box-btn-login a {
+    color: var(--link-color);
+    font-weight: 700;
+}
+
 /*======================= FOOTER ======================*/
 footer {
     display: flex;
@@ -497,27 +637,13 @@ footer {
     text-align: center;
     align-content: center;
     gap: 1rem;
-    margin-top: 25vh;
-}
-
-.footer-links {
-    text-wrap: balance;
-}
-
-.footer-links li, footer p {
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
+    margin-top: 20vh;
     color: var(--link-color);
-    letter-spacing: 2px;
-    transition: color 0.5s;
+
 }
 
-.footer-links li {
-    text-transform: uppercase;
-}
-
-.footer-links li:hover {
-    color: var(--text-color);
+footer p {
+    font-size: clamp(0.7rem, 0.5vw, 5rem);
 }
 
 .footer-links, .social-media {
@@ -525,5 +651,34 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    padding: 10px;
+}
+
+.footer-links {
+    text-wrap: balance;
+    gap: 1.5rem;
+}
+
+.footer-links li {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.5s;
+}
+
+.footer-links li {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footer-links li:hover {
+    color: var(--text-color);
+}
+
+.social-media {
+    gap: 2rem;
+}
+
+.social-media img {
+    cursor: pointer;
 }

@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 100px) and (max-width: 768px) {
+    header, .login-section {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 3rem 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    header .logo {
+        width: 10rem;
+    }
+
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+
+    form {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        justify-content: flex-start;
+    }
+
+    .box-btn-login {
+        flex-direction: column;
+        text-align: start;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+
+    footer, .login-section, header {
+        padding: 2rem;
+    }
+
+
+    header .logo {
+        width: 12rem;
+    }
+
+    form {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        justify-content: flex-start;
+    }
+
+
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 901px) and (orientation: landscape) {
+
+    header {
+        padding: 1rem 3rem;
+    }
+
+    footer, .login-section {
+        padding: 3rem;
+    }
+
+    header, .footer-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (min-width: 901px) {
+    footer, .login-section, header {
+        padding: 1rem 10vw;
+    }
+
+    footer {
+        margin-top: 2vh;
+    }
+
+    form {
+        width: 60dvw;
+        height: auto;
+        padding: 2rem 4rem;
+    }
+
+}
